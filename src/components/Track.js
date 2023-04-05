@@ -118,9 +118,9 @@ const Discover = () => {
   }, []);
 
   useEffect(() => {
-    // if (track_data && track_data.info) {
-    //   document.getElementById('artist-info').classList.add('add-line-clamp')
-    // }
+    if (track_data && track_data.info) {
+      document.getElementById("artist-info").classList.add("add-line-clamp");
+    }
   }, [track_data]);
 
   const handleReadMore = () => {
@@ -257,7 +257,11 @@ const Discover = () => {
             {track_data.info}
           </div>
         )}
-        {/* {track_data.info && <div className='read-more' onClick={handleReadMore}>{readMore}</div>} */}
+        {track_data.info && (
+          <div className="read-more" onClick={handleReadMore}>
+            {readMore}
+          </div>
+        )}
       </div>
       <div className="list-wrapper">
         <div className="list-header">
