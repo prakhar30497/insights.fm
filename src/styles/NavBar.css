@@ -1,0 +1,116 @@
+.nav {
+    height: 100%;  
+    width: 180px;  
+    position: fixed; 
+    z-index: 100; 
+    top: 0; 
+    left: 0; 
+    background-color: var(--nav); 
+    /* transition: .5s ease;  */
+    overflow-x: hidden;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+.App-logo {
+    width: 100%;
+    height: 40px;
+    max-width: 130px;
+    margin: 20px;
+}
+
+.app-name {
+    padding: 1.4rem 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+
+
+.nav-list-item {
+    padding: 0 8px;
+}
+
+.nav-list-item > a {
+    color: var(--light-gray);
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.nav-list-item > a:hover {
+    color: #fff;
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.logout-button {
+    width: fit-content;
+    font-size: 14px;
+    padding: 10px 40px 10px;
+    border-radius: 500px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      flex-direction: row; 
+    }
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em;
+    }
+    .App-logo {
+        display: none;
+    }
+    .app-name, .logout, .logout-button  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+    }
+    .app-name, .logout, .logout-button  {
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+.search-input{
+  border: none;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 0;
+  height: 20px;
+  width: 500px;
+  border:1px solid #eaeaea;
+  border-radius: 20px;
+  outline:none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.search-input:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+.genre-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.filter-name {
+  padding: 1em;
+  font-weight: 700;
+}
+
+.genre-select {
+  background-color: whitesmoke;
+}
+
+.year-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.search-button {
+  margin-left: auto;
+  margin-top: 0;
+}

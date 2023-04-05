@@ -1,0 +1,210 @@
+.artist-name-header {
+  align-self: stretch;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.artist-header {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  max-height: 500px;
+  min-height: 250px;
+  padding: 60px;
+  /* background-image: url('https://lastfm.freetls.fastly.net/i/u/ar0/3da2e42d1742d452ec4f9d9723f788c4.jpg');
+  background-size: 50% auto; 
+  background-position: right center; */
+}
+
+.header-title {
+  color: white;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: pre-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.header-title:hover {
+  color: var(--primary)
+}
+
+.artist-image {
+  width: 250px;
+  height: 250px;
+  min-width: 250px;
+  min-height: 250px;
+  align-self: flex-end;
+}
+
+.contain {
+  /* Image is scaled to fit within the container. */
+  /* Aspect ratio IS maintained */
+  object-fit: contain;
+}
+
+.artist-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.artist-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: flex-end;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.artist-stats > * {
+  border: 1px solid var(--dark-gray);
+  padding: 15px 25px 15px 25px;
+}
+
+.artist-info {
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: pre-wrap;
+  -webkit-box-orient: vertical;
+}
+
+.remove-line-clamp {
+  -webkit-line-clamp: none;
+}
+
+.add-line-clamp {
+  -webkit-line-clamp: 2;
+}
+
+
+.read-more {
+  font-size: 1.1em;
+  padding-top: 4px;
+  color: var(--primary);
+}
+
+.info-content {
+  margin: 20px;
+  font-size: 1em;
+}
+
+.artist-content {
+  display: flex;
+}
+
+.artist-content-section1 {
+  flex: 4;
+}
+
+.artist-content-section2 {
+  flex: 1;
+}
+
+.follow-button {
+  width: fit-content;
+  font-size: 14px;
+  padding: 10px 20px 10px;
+  margin-top: 20px;
+  border-radius: 500px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid;
+  border-color: var(--primary);
+}
+
+.primary-background-color {
+  background: var(--primary);
+}
+
+
+.list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1em
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  grid-auto-rows: 300px; */
+}
+
+.list-grid > a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.list-grid-items {
+  margin: 1em;
+  cursor: pointer;
+  width: 160px;
+}
+
+.list-grid-item-image {
+  width: 160px;
+  height: 160px;
+}
+
+.list-grid-item-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.list-grid-item-name {
+  font-size: 1.1em;
+  margin-top: 1em;
+  font-weight: 700;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: pre-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.list-grid-item-info {
+  color: var(--light-gray);
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.album-list-filter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: flex-end;
+  margin-left: auto;
+  color: var(--light-gray);
+  /* border-right: 1px solid var(--dark-gray);
+  border-left: 1px solid var(--dark-gray);
+  border-top: 1px solid var(--dark-gray); */
+}
+
+.album-list-filter > div {
+  padding: 10px 20px 10px 20px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.view-all {
+  display: flex;
+
+  /*this centers the text horizontally*/
+  justify-content: center;
+
+  /*this centers the text vertically*/
+  align-items: center;
+  font-weight: bold;
+}

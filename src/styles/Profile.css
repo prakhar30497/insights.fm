@@ -1,0 +1,273 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+  padding-left: 180px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding-left: 0;
+  }
+}
+
+.user-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* height: 20vh;
+  max-height: 500px;
+  min-height: 200px; */
+  margin: 60px;
+}
+
+.user-profile {
+  display: flex;
+}
+
+.user-image {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  min-height: 150px;
+  align-self: flex-end;
+}
+
+.user-image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.name-header {
+  align-self: flex-end;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page {
+  font-size: 1em;
+}
+
+.user-name {
+  color: white;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.user-name:hover {
+  color: var(--primary);
+}
+
+.user-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: flex-end;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.user-stats > * {
+  border: 1px solid var(--dark-gray);
+  padding: 15px 25px 15px 25px;
+}
+
+.gray {
+  color: var(--light-gray);
+}
+
+.list-wrapper {
+  margin: 20px 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  .user-header {
+    margin: 20px;
+    margin-bottom: 0;
+  }
+  .list-wrapper {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .list-filter {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .user-header {
+    justify-content: center;
+  }
+  .item-name-sec {
+    display: none;
+  }
+}
+
+.list-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.list-header > h2 {
+  font-size: 2em;
+}
+
+.list-filter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: flex-end;
+  color: var(--light-gray);
+  /* border-right: 1px solid var(--dark-gray);
+  border-left: 1px solid var(--dark-gray);
+  border-top: 1px solid var(--dark-gray); */
+}
+
+.list-filter > div {
+  padding: 10px 20px 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.list-filter-selected {
+  border-bottom: 2px solid var(--primary);
+  border-width: thick;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.list-filter > div:hover {
+  color: var(--white);
+}
+
+.list-content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  /* min-height: 700px; */
+}
+
+.list-content-item {
+  margin: 8px;
+}
+
+.list-content-item > a {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.item-name {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+.item-name:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.item-name-sec {
+  font-size: 0.9em;
+  color: var(--light-gray);
+  margin-right: 8px;
+}
+
+.align-item-right {
+  margin-left: auto;
+}
+
+.item-image {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.item-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.list-content-genre {
+  margin: 20px;
+}
+
+.list-content-genre-item {
+  font-size: 1em;
+  padding: 10px 20px 10px;
+  margin: 10px;
+  border-radius: 500px;
+  border: 1px solid var(--dark-gray);
+  background: var(--dark-gray);
+  color: white;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+}
+
+.profile-insight-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.profile-insight-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(5, 150px); */
+  text-align: center;
+  gap: 1em;
+}
+
+.profile-insight {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em;
+  width: 150px;
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.profile-insight-detail-label {
+  font-size: 0.9em;
+  color: var(--light-gray);
+}
+
+.profile-insight-detail-value {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+.active-profile-insight-card {
+  background: var(--dark-gray);
+  border-radius: 1em;
+  box-shadow: 0 2px 10px var(--dark-gray);
+  z-index: 99;
+}
+
+.insight-info {
+  font-size: 1.1em;
+  padding: 1em;
+}
+
+.profile-open-spotify {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 700px) {
+  .profile-open-spotify {
+    justify-content: center;
+  }
+}

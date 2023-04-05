@@ -1,0 +1,42 @@
+.artist-name-list {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 2px;
+  color: var(--light-gray);
+}
+
+.artist-name-list-item {
+  cursor: pointer;
+}
+
+.album-details-grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.album-details-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(5, 150px); */
+  text-align: center;
+}
+
+.album-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6em;
+  width: 250px;
+  max-width: 250px;
+}
+
+.album-detail-label {
+  font-size: 0.9em;
+  color: var(--light-gray);
+}
+
+.album-detail-value {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+}
